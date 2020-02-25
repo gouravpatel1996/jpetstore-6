@@ -12,10 +12,10 @@ variables:
   azureSubscription: '670f2fa9-4c93-4fde-a1b1-0e25d4a71be3'
   
   # Web app name
-  webAppName: 'springboot-app'
+  webAppName: 'JPET'
 
   # Environment name
-  environmentName: 'springboot-app'
+  environmentName: 'JPET'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: springboot-app'
+            displayName: 'Azure Web App Deploy: JPET'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
